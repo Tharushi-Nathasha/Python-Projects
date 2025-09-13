@@ -1,5 +1,4 @@
-# Python-Projects
-This is a repository that represents some beginner level python projects with source code that anybody can refer.
+
 # 🎲 Python Madlibs Game  
 
 A fun and interactive **Madlibs word game** written in Python.  
