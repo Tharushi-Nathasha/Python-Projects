@@ -30,7 +30,14 @@ def madlib1():
     place = get_input("Place: ", default_places)
 
 
-    madlib = f"I love making {adjective} content! It makes me {verb} when ever I create them. I love being financially stable and a {noun} content creator. I want to be as famous as {famous_person} and buy my favourite items and to decorate my {place}."
+    madlib = (
+        f"\nI love making {adjective} content! 😎\n"
+        f"It makes me {verb} whenever I create them. 💡\n"
+        f"I love being financially stable and a {noun} content creator. 🏆\n"
+        f"I want to be as famous as {famous_person} 🌟\n"
+        f"and decorate my {place} with cool stuff! 🏠\n"
+    )
+    
     print(madlib)
 
 def madlib2():
