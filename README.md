@@ -2,10 +2,6 @@
 This is a repository that represents some beginner level python projects with source code that anybody can refer.
 # 🎲 Python Madlibs Game  
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)  
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen)  
-![License](https://img.shields.io/badge/License-MIT-yellow)  
-
 A fun and interactive **Madlibs word game** written in Python.  
 Fill in blanks with adjectives, nouns, verbs, and names to create hilarious stories!  
 Perfect beginner project for learning **functions, user input, and string formatting** in Python.  
