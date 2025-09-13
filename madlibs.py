@@ -1,38 +1,68 @@
+import random 
+
+default_adjectives = ["funny", "exciting", "boring", "adventurous"]
+default_verbs = ["run", "jump", "swim", "dance"]
+default_nouns = ["cat", "dog", "car", "house"]
+default_famous_people = ["Albert Einstein", "Marie Curie", "Isaac Newton", "Ada Lovelace"]
+default_places = ["park", "beach", "mountains", "city"]
+
+#Helper Function to get user input or default value
+def get_input(prompt, default_list):
+        user_input = input(prompt + " (or press Enter to use a default): ")
+        if user_input.strip() == "":
+            return random.choice(default_list)
+        return user_input
+
+def save_story(story):
+    """Save the generated story in to files."""
+    with open("Saved_stories.txt", "a", encoding="utf-8") as file:
+        file.write(story + "\n\n")
+
+#madlib functions
 
 def madlib1():
-    print("Let's play a game of Madlibs!")
+    print("\n🎉 Let's play Madlib 1! 🎉")
 
-    adjective = input("Adjective: ")
-    verb = input("Verb: ")
-    noun = input("Noun:")
-    famous_person = input("Famous Person: ")
-    place = input("Place: ")
+    adjective = get_input("Adjective: ", default_adjectives)
+    verb = get_input("Verb: ", default_verbs)
+    noun = get_input("Noun: ", default_nouns)
+    famous_person = get_input("Famous Person: ", default_famous_people)
+    place = get_input("Place: ", default_places)
 
-    madlib = f"I love making {adjective} content! It makes me {verb} when ever I create them. I love being financially stable and a {adjective} content creator. I want to be as famous as {famous_person} and buy my favourite items and to decorate my {place}."
+
+    madlib = f"I love making {adjective} content! It makes me {verb} when ever I create them. I love being financially stable and a {noun} content creator. I want to be as famous as {famous_person} and buy my favourite items and to decorate my {place}."
     print(madlib)
 
 def madlib2():
-    adjective = input("Adjective: ")
-    verb = input("Verb: ")
-    noun1 = input("Noun:")
-    noun = input("Noun:")
-    person = input("Person: ")
-    place = input("Place: ")
 
-    madlib = f"The best memory in my school is the {noun1} day of my school. It was the best ever memory I have in my {place} time. \
-         I was with my friends and we were all {verb} for jokes we did. My {person} was also with me and we both were in photography {noun} of our school. It was a very {adjective} day."
-    
+    print("\n🎉 Let's play Madlib 1! 🎉")
+
+    noun1 = get_input("Noun: ", default_nouns)
+    place = get_input("Place: ", default_places)
+    verb = get_input("Verb: ", default_verbs)
+    person = get_input("Person: ", default_famous_people)
+    adjective = get_input("Adjective: ", default_adjectives)
+    noun = get_input("Noun: ", default_nouns)
+
+
+    madlib = (
+        f"\nThe best memory in my school is the {noun1} day. 📚\n"
+        f"It was the best ever memory I had in my {place} days. 🏫\n"
+        f"I was with my friends and we were all {verb} at the jokes we made. 😂\n"
+        f"My {person} was also with me and we both joined the photography {noun2}. 📸\n"
+        f"It was such a {adjective} day! 🌞\n"
+    )
     
     print(madlib)
 
-print("Welcome to Madlibs! Choose a madlib to play:")
+print("🎮 Welcome to Madlibs! 🎮 Choose a madlib to play:")
 choice = input("Type 1 for Madlib 1 or 2 for Madlib 2: ")
 if choice == "1":
     madlib1()
 elif choice == "2":
     madlib2()
 else:
-    print("Invalid choice. Please choose 1 or 2.")
+    print("❌ Invalid choice. Please choose 1 or 2.")
 
 
 print("Do you want to play again? (yes/no)")
@@ -48,8 +78,10 @@ while True:
         else:
             print("Invalid choice. Please choose 1 or 2.")
     elif play_again == "no":
-        print("Thanks for playing! Goodbye!")
+        print("👋 Thanks for playing! Goodbye!")
         break
     
-
+#Run the program 
+if __name__ == "_main_":
+    main()
 
