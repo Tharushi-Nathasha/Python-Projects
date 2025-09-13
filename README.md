@@ -1,10 +1,5 @@
 # 🐍 Python Projects Collection  
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)  
-![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen)  
-![Status](https://img.shields.io/badge/Status-Active-success)  
-![License](https://img.shields.io/badge/License-MIT-yellow)  
-
 A collection of **fun, beginner-friendly, and intermediate Python projects** to practice programming skills, improve problem-solving, and build a solid portfolio.  
 
 This repository includes **games, utilities, algorithms, and mini-applications** – perfect for anyone learning Python.  
