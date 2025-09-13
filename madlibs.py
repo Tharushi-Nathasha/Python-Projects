@@ -13,6 +13,7 @@ def get_input(prompt, default_list):
             return random.choice(default_list)
         return user_input
 
+#Saving story function
 def save_story(story):
     """Save the generated story in to files."""
     with open("Saved_stories.txt", "a", encoding="utf-8") as file:
@@ -37,7 +38,7 @@ def madlib1():
         f"I want to be as famous as {famous_person} 🌟\n"
         f"and decorate my {place} with cool stuff! 🏠\n"
     )
-    
+    save_story(madlib)
     print(madlib)
 
 def madlib2():
@@ -59,8 +60,9 @@ def madlib2():
         f"My {person} was also with me and we both joined the photography {noun2}. 📸\n"
         f"It was such a {adjective} day! 🌞\n"
     )
-    
+
     print(madlib)
+    save_story(madlib)
 
 print("🎮 Welcome to Madlibs! 🎮 Choose a madlib to play:")
 choice = input("Type 1 for Madlib 1 or 2 for Madlib 2: ")
@@ -89,6 +91,6 @@ while True:
         break
     
 #Run the program 
-if __name__ == "_main_":
-    main()
+if __name__ == "__main__":
+    pass
 
