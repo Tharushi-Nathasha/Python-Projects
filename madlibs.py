@@ -33,3 +33,23 @@ elif choice == "2":
     madlib2()
 else:
     print("Invalid choice. Please choose 1 or 2.")
+
+
+print("Do you want to play again? (yes/no)")
+
+while True:
+    play_again = input().lower()
+    if play_again == "yes":
+        choice = input("Type 1 for Madlib 1 or 2 for Madlib 2: ")
+        if choice == "1":
+            madlib1()
+        elif choice == "2":
+            madlib2()
+        else:
+            print("Invalid choice. Please choose 1 or 2.")
+    elif play_again == "no":
+        print("Thanks for playing! Goodbye!")
+        break
+    
+
+
