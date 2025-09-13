@@ -87,27 +87,4 @@ Formatting sentences with f-strings
 
 Running Python files via the command line
 
-🌟 Future Improvements
-Add more story templates
-
-Support for multiplayer Madlibs
-
-Save stories to a file
-
-GUI version with Tkinter or a web-based version with Flask
-
-📄 License
-This project is licensed under the MIT License – see the LICENSE file for details.
-
-yaml
-Copy code
-
 ---
-
-Do you also want me to prepare a **LICENSE file** (MIT license) that you can copy-paste into your repo so it looks more professional?
-
-
-
-
-
-Ask ChatGPT
